@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: Inter;
+  font-size: 1rem;
+  background: var(--Grey-900);
+  color: var(--White);
+  padding: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--Grey-800);
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.profile {
+  text-align: center;
+}
+
+img,
+p,
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.profile h2 {
+  font-size: 1rem;
+  color: var(--Green);
+}
+
+.links a {
+  display: block;
+  width: 100%;
+  background-color: var(--Grey-700);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--White);
+  text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+}
+
+.links a:active {
+  background-color: var(--Green);
+}
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 375px;
+  }
+}
